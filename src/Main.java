@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -16,5 +18,28 @@ public class Main {
         } else {
             a = 1;
         }
+        System.out.println(a);
+
+        System.out.println("Ingrese 1 para seguir 2 para no seguir");
+        int opc = scanner.nextInt();
+
+        String vali= opc==1 ? "daniel":"jorge";
+
+        System.out.println(vali);
+
+
+            System.out.println("Verdad ambas");
+            int eda,edad;
+            
+
+        do {
+            System.out.println("Usted es mayor de edad: \n1. Si\n2. No");
+            eda = scanner.nextInt();
+            System.out.println("Ingrese su edad: ");
+            edad = scanner.nextInt();
+        }while (eda == 1 ^ edad >18); //eda == 1 && edad < 18
+
+        boolean s = vali instanceof String;
+        System.out.println("s = " + s);
     }
 }
